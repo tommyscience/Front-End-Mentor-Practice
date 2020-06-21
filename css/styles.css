@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding: 0 30px;
+}
+
+header {
+  text-align: center;
+  padding: 70px 0 50px 0;
+
+}
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #4C4E61;
+}
+
+header h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #4C4E61;
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  font-weight: 400;
+  color: #A3A5AE;
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+
+
+
+/* cards */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  /* what is the difference between align-items:center; & justify-content: center; ? */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.card {
+  box-shadow: 2px 8px 14px 0 #A3A5AE;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 2rem 0;
+  max-width: 400px;
+}
+
+.card.cyan {
+  border-top: 5px solid #45D3D3;
+  margin: 0;
+}
+
+.card.red {
+  border-top: 5px solid #EA5353;
+
+}
+
+.card.orange {
+  border-top: 5px solid #FCAF4A;
+
+}
+
+.card.blue {
+  border-top: 5px solid #549EF2;
+  margin: 0;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.card h2 {
+  color: #4C4E61;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #A3A5AE;
+}
+
+@media only screen and (min-width:1200px) {
+  body {
+    font-size: 18px;
+  }
+  header h1,
+  header h2 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+.cards {
+  flex-direction: row;
+}
+
+.card {
+  margin: 2rem;
+}
+
+}
